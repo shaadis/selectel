@@ -1,5 +1,5 @@
 <header class="header">
-    <a href="#" class="logo"><img src="" alt="Selectel"></a>
+    <a href="https://selectel.ru/" class="logo"><img src="" alt="Selectel"></a>
 </header>
 <section class="slider">
     <ul class="slides">
@@ -30,7 +30,17 @@
     <p class="subscribe">
         Подписывайтесь:
     </p>
-    <a href="//vk.com/" target="_blank">
+    <a href="https://vk.com/" target="_blank">
         <img src="" alt="VKontakte">
     </a>
 </footer>
+<div class="modal">
+    <button class="close">Закрыть</button>
+    <h1 class="modal__title">Поздравить</h1>
+    <form action="/assets/response.html" method="get" class="form-congratulate" id="form-congratulate">
+        <input class="form-input" type="text" placeholder="Имя" name="username" required>
+        <textarea class="form-textarea" placeholder="Сообщение" name="congrats" required></textarea>
+        <button type="submit" class="btn" id="submit">Поздравить</button>
+    </form>
+
+</div>
