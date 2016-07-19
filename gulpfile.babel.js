@@ -8,6 +8,7 @@ import panini   from 'panini';
 import rimraf   from 'rimraf';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
+import globbing from 'gulp-css-globbing';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -65,6 +66,9 @@ function resetPages(done) {
 // In production, the CSS is compressed
 function sass() {
     return gulp.src('src/assets/scss/app.scss')
+        .pipe(globbing({
+            extensions: ['.scss']
+        }))
         .pipe($.sourcemaps.init())
         .pipe($.sass({
             includePaths: PATHS.sass
