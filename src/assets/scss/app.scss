@@ -1,2 +1,7 @@
-@import "base/normalize";
-@import "base/base";
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "global/normalize";
+@import "global/scaffolding";
+@import "global/typography";
+@import "blocks/**/*.scss";
