@@ -8,6 +8,6 @@ node_js:
   - "5"
   - "node"
 
-matrix:
-  allow_failures:
-    - node_js: "node"
+before_script:
+  # install node.js dependencies, travis runs `npm install` by default
+  - npm install -g gulp
