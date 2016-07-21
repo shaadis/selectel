@@ -1,0 +1,7 @@
+.modal
+    button.close Закрыть
+    h1.modal__title Поздравить
+    form#form-congratulate.form-congratulate(action="assets/response.html", method="get")
+        input.form-input(type="text", placeholder="Имя", name="username", required)
+        textarea.form-textarea(placeholder="Сообщение", name="congrats", required)
+        button#submit.btn(type="submit") Поздравить

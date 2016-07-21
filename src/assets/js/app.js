@@ -10,17 +10,14 @@
         e.preventDefault();
         //counting submits
         var congratCount = localStorage.getItem('trexCongrats');
-        if(congratCount === null) {
+        if(congratCount === null)
             congratCount = 0;
-        }
         congratCount++;
         localStorage.setItem('trexCongrats', congratCount);
 
         //send form
         var request = new XMLHttpRequest();
         request.open(form.method, form.action, true);
-
-
         request.onload = function(){
             var resp = null;
             if (request.status >= 200 && request.status < 400) {
