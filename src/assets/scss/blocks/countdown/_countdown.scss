@@ -1,0 +1,20 @@
+.countdown {
+  text-align: center;
+}
+.countdown__time,
+.countdown__separator {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.countdown__time {
+  font-size: rem-calc(72);
+  padding: 12px;
+  border: 2px solid green;
+  border-radius: 3px;
+  width: 110px;
+}
+
+.countdown__separator {
+  margin: 0 15px;
+}
