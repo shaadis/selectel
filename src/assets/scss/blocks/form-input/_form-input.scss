@@ -8,14 +8,17 @@
   box-sizing: border-box;
   &:focus {
     outline: none;
-    &:valid {
+  }
+  &:valid {
+    &:focus {
       border-color: $input-valid-border;
     }
-    &:invalid {
+  }
+  &:required:invalid {
       border-color: $input-invalid-border;
-    }
   }
 }
+
 
 .form-input--no-resize {
   resize: none;
