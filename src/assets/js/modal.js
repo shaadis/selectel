@@ -1,5 +1,4 @@
 ;!function() {
-    'use strict';
     var modal = document.getElementById('modal');
     var modalOpenBtn = document.getElementById('modal-open');
     var closeModalBtn = document.querySelectorAll('.js-close-modal');
