@@ -1,0 +1,22 @@
+.form-input {
+  display: block;
+  border-radius: $input-border-radius;
+  border: 1px solid $input-border-color;
+  width: 100%;
+  margin: $input-margin;
+  padding: $input-padding;
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+    &:valid {
+      border-color: $input-valid-border;
+    }
+    &:invalid {
+      border-color: $input-invalid-border;
+    }
+  }
+}
+
+.form-input--no-resize {
+  resize: none;
+}

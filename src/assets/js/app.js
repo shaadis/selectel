@@ -1,7 +1,5 @@
-'use strict';
-/*form*/
-
-!function() {
+;!function() {
+    'use strict';
     var submit = document.getElementById('submit');
     var form = document.getElementById('form-congratulate');
 
@@ -22,7 +20,7 @@
             var resp = null;
             if (request.status >= 200 && request.status < 400) {
                 resp = request.responseText;
-                form.innerHTML = resp;
+                document.getElementById('modal-body').innerHTML = resp;
                 var trexCongratContainer = document.getElementById('congrats-count');
                 trexCongratContainer.innerText = localStorage.getItem('trexCongrats');
             } else {
