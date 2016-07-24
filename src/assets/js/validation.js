@@ -7,9 +7,9 @@ function validation(form) {
     for(var i = 0; i < formArray.length; i++) {
         if(formArray[i].hasAttribute('required') && formArray[i].value == '') {
             if (formArray[i].classList)
-                formArray[i].classList.add('is-invalid');
+                formArray[i].classList.add('form-input--invalid');
             else
-                formArray[i].className += ' is-invalid';
+                formArray[i].className += ' form-input--invalid';
             valid = false;
         }
     }
