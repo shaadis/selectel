@@ -1,3 +1,15 @@
 .btn {
-
+  border-width: 0;
+  background: linear-gradient(to bottom, #6fa709, #468207);
+  color: $white;
+  padding: 10px 30px;
+  border-radius: $border-radius-base;
+  cursor: pointer;
+  &:hover {
+    background: none #6ea608;
+  }
+  &:focus,
+  &:active {
+    background: none #4a850c;
+  }
 }
