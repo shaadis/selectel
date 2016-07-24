@@ -19,5 +19,6 @@ PATHS:
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
     # Paths to your own project code are here
+    - "src/assets/js/util/util.js"
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
