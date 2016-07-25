@@ -1,9 +1,13 @@
 .modal#modal(style="display: none;")
     .modal__dialog
-        button.modal__close.js-close-modal &times;
+        button.modal__close.js-close-modal Закрыть
         .modal__body#modal-body
-            h1.modal__title Поздравить
+            h1.modal__title Поздравить Тирекса
             form#form-congratulate.form-congratulate(action="assets/response.html", method="get", novalidate)
-                input.form-input(type="text", placeholder="Имя", name="username", required)
-                textarea.form-input.form-input--no-resize(placeholder="Поздравление", name="congrats", required)
+                .form-input__wrap
+                    input.form-input(type="text", placeholder="Имя", name="username", required)
+                    span.form-input__error Поле не заполнено
+                .form-input__wrap
+                    textarea.form-input.form-input--no-resize(placeholder="Поздравление", name="congrats", required)
+                    span.form-input__error Поле не заполнено
                 button#submit.btn(type="submit") Поздравить

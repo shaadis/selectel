@@ -1,7 +1,13 @@
 .countdown {
   text-align: center;
-  margin: 40px;
+  margin-bottom: 48px;
 }
+
+.countdown__title {
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
 .countdown__time,
 .countdown__separator {
   display: inline-block;
@@ -10,10 +16,11 @@
 
 .countdown__time {
   font-size: rem-calc(72);
-  padding: 12px;
-  border: 2px solid green;
+  line-height: 1;
+  padding: 22px 12px;
+  border: 2px solid $green;
   border-radius: 3px;
-  width: 110px;
+  width: 100px;
   background: $white;
 }
 

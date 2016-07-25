@@ -2,9 +2,10 @@ doctype html
 html.no-js(lang="ru")
     include partials/head
     body
-        include partials/header
-        include components/slider
-        include partials/content
-        include components/modal
-        include partials/footer
+        .container
+            include partials/header
+            include components/slider
+            include partials/content
+            include components/modal
+            include partials/footer
         script(src="assets/js/app.js")

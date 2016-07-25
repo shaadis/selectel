@@ -16,7 +16,7 @@ function countdown(toDate) {
             days = hours * 24;
 
         function leadZero(number) {
-            var num = number + '';
+            var num = number.toString();
             if(num.length <= 1) {
                 return '0'+ num;
             } else {

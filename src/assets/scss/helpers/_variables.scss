@@ -1,9 +1,10 @@
 //general colors
 $white: #fff;
-$gray: gray;
-$green: green;
-$red: red;
-$primary-color: blue;
+$gray: #d2d2d2;
+$dark-gray: #37434a;
+$green: #189618;
+$red: #d75a5a;
+$primary-color: #247cdd;
 
 $img-folder: '../img/';
 
@@ -14,6 +15,7 @@ $index-modal-overlay: 1005;
 //base styles
 
 $border-radius-base: 4px;
+$text-color-base: $dark-gray;
 
 //typography
 $global-font-size: 16px;
@@ -35,5 +37,6 @@ $input-margin: 0 0 30px;
 $input-padding: 10px 20px;
 $input-valid-border: $green;
 $input-invalid-border: $red;
+$input-invalid-text: $red;
 $input-outline-color: $primary-color;
 

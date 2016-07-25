@@ -19,27 +19,26 @@
   transform: translate(-50%, -50%);
   padding: 50px 70px;
   border-radius: $modal-border-radius;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.25);
 }
 
 .modal__close {
-  background: none transparent;
+  @include hideText;
   border: 0;
   margin: 0;
   padding: 0;
-  line-height: 1;
-  font-size: 60px;
   top: -50px;
   position: absolute;
   right: -39px;
-  color: #fff;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAJFBMVEUAAAD///////////////////////////////////////////+0CY3pAAAAC3RSTlMAEDCQoM/Q3+Dv8CppNzIAAABxSURBVHjafdA7EoAgEAXBx+IPuf99NTPokok7muxnZVGde645aiHGvFL3axbirmAUGAQGgUFgEBgERqFRaBQahUahQWgQGoTX+Yw4js/8iNY+8yMSDAKDwCAwCAwCg9AoNAqNQqPQKDQITPr2ioXZ+gP8uQfXpdKGoQAAAABJRU5ErkJggg==) transparent no-repeat;
+  height: 34px;
+  width: 34px;
+  cursor: pointer;
 }
 
 .modal__title {
   margin-top: 0;
-  text-align: center;
 }
-
-//
 
 .is-modal-open {
   overflow: hidden;
